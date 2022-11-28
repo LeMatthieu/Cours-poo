@@ -17,5 +17,5 @@ if(!property_exists($ballonFoot, 'prix')){
     echo " le ballon coute $ballonFoot->prix";
 }
 
-
+var_dump(get_declared_classes())
 ?>
