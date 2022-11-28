@@ -1,10 +1,8 @@
 <?php 
+//creatiopn d'un objet via instanciation
+ 
+$ballonFoot = new stdClass; 
+$ballonFoot->type="Football";
 
-$tab['couleur'] ="bleu";
-$tab['type'] ="plume";
-$tab['prix'] =5;
-
-$stylo =(object) $tab;
-//print_r($stylo);
-var_dump($stylo);
+var_dump($ballonFoot);
 ?>
