@@ -1,21 +1,41 @@
 <?php 
 //creatiopn d'un objet via instanciation
  
-$ballonFoot = new stdClass; 
-$ballonFoot->type="Football";
-$ballonFoot->marque="Nike";
-$ballonFoot->taille=5;
-$ballonFoot->status="crevé";
+class Ballon {
+    public $marque;
+    public $sport;
 
-//echo("hey le ballon de " . $ballonFoot->type . ". " . $ballonFoot->marque . " est " . $ballonFoot->status . ", Ismael");
-
-echo " - hey le ballon de $ballonFoot->type, $ballonFoot->marque 
-est $ballonFoot->status . ";
-
-if(!property_exists($ballonFoot, 'prix')){
-    $ballonFoot-> prix = 5;
-    echo " le ballon coute $ballonFoot->prix";
+    function lancer() {
+        echo "vous avez lancé le ballon"; 
+    }
 }
+// on instancie 2 type de ballons
+//------------------Ballon de Foot---------------------
+$ballonFoot = new Ballon();// instanciation
+$ballonFoot -> marque ="Nike"; // on assigne la valeur de la props 
+$ballonFoot -> sport ="Football"; // on assigne la valeur de la props 
+//------------------------ballon de rugby----------------
+$ballonRugby = new Ballon();
+$ballonFoot -> marque ="Gilbert TM"; // on assigne la valeur de la props 
+$ballonFoot -> sport ="Rugby"; // on assigne la valeur de la props 
+// Actions sur les objets 
+echo "Sport : $ballonFoot->sport <br> Marque : $ballonFoot->marque";
+echo "<br>";
+$ballonFoot->lancer();
 
-var_dump(get_declared_classes())
+echo "<br><br><hr>";
+
+echo "Sport: $ballonRugby->sport <br> Marque : $ballonRugby->marque";
+
+
+
+
+
+
+
+
+
+
+
 ?>
+
