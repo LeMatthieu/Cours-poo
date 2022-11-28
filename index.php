@@ -12,6 +12,10 @@ $ballonFoot->status="crevé";
 echo " - hey le ballon de $ballonFoot->type, $ballonFoot->marque 
 est $ballonFoot->status . ";
 
+if(!property_exists($ballonFoot, 'prix')){
+    $ballonFoot-> prix = 5;
+    echo " le ballon coute $ballonFoot->prix";
+}
 
 
 ?>
