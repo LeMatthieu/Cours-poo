@@ -3,6 +3,15 @@
  
 $ballonFoot = new stdClass; 
 $ballonFoot->type="Football";
+$ballonFoot->marque="Nike";
+$ballonFoot->taille=5;
+$ballonFoot->status="crevé";
 
-var_dump($ballonFoot);
+//echo("hey le ballon de " . $ballonFoot->type . ". " . $ballonFoot->marque . " est " . $ballonFoot->status . ", Ismael");
+
+echo " - hey le ballon de $ballonFoot->type, $ballonFoot->marque 
+est $ballonFoot->status . ";
+
+
+
 ?>
