@@ -1,12 +1,12 @@
 <?php 
 //creatiopn d'un objet via instanciation
- 
+
 class Ballon {
     public $marque;
     public $sport;
 
-    function lancer() {
-        echo "vous avez lancé le ballon"; 
+    function lancer($distance = null) {
+        echo "vous avez lancé le ballon à $distance métres"; 
     }
 }
 // on instancie 2 type de ballons
