@@ -1,31 +1,21 @@
 <?php 
 //creatiopn d'un objet via instanciation
 
-class Ballon {
-    public $marque;
-    public $sport;
+class User {
+    public $nom;
+    public $age;
 
-    function lancer($distance = null) {
-        echo "vous avez lancé le ballon à $distance métres"; 
+    function tchater($message) {
+        echo " - ".$message; 
     }
 }
-// on instancie 2 type de ballons
-//------------------Ballon de Foot---------------------
-$ballonFoot = new Ballon();// instanciation
-$ballonFoot -> marque ="Nike"; // on assigne la valeur de la props 
-$ballonFoot -> sport ="Football"; // on assigne la valeur de la props 
-//------------------------ballon de rugby----------------
-$ballonRugby = new Ballon();
-$ballonFoot -> marque ="Gilbert TM"; // on assigne la valeur de la props 
-$ballonFoot -> sport ="Rugby"; // on assigne la valeur de la props 
-// Actions sur les objets 
-echo "Sport : $ballonFoot->sport <br> Marque : $ballonFoot->marque";
-echo "<br>";
-$ballonFoot->lancer();
 
-echo "<br><br><hr>";
+$michel = new User(); // on instancie un objet michel
+$michel->age=49; //assigne un age
+$michel->nom="michel"; // oui l'objet michel pas la props
 
-echo "Sport: $ballonRugby->sport <br> Marque : $ballonRugby->marque";
+echo $michel->tchater("$michel->nom: Salut les dev full stack");
+
 
 
 
