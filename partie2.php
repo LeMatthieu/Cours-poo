@@ -2,7 +2,9 @@
  
  
  class Chicken {
-
+    function __clone (){
+        echo "<p> Objet cloner </p>"
+    }
     function __destruct(){
         echo "<p> Objet détruit </p>";
     }

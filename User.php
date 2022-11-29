@@ -39,6 +39,8 @@ $Samy  -> age = 54;
 $Samy  -> name = "Samy";
 $Samy  ->choixAvatar(3);
 
+var_dump($Samy);
+var_dump($David);
 
 echo "<h1> TCHAT </h1>";
 
