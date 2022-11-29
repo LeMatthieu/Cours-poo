@@ -1,19 +1,19 @@
 <?php
- class Verre {
+ 
+ 
+ class Chicken {
 
-    public $nom;
-    public $materiaux;
-    public $contenu;
+    function __destruct(){
+        echo "<p> Objet détruit </p>";
+    }
+    function __construct(){
+        echo "<p> objet créer </p>";
 
-function __construct($nom, $materiaux, $contenu){
-    
-    $this->nom=$nom;
-    $this->materiaux=$materiaux;
-    $this->contenu = $contenu;
+    }
 
-}
  }
-$gobletEau = new Verre("Gobelet", "plastique", "eau");
 
+ $nugget =new Chicken ();
+ $nugget2 =new Chicken ();
 
 ?>
